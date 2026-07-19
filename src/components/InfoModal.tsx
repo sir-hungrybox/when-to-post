@@ -18,10 +18,10 @@ export default function InfoModal({ onClose }: Props) {
         <ul>
           <li>
             <b>Audience online</b> — the country's daily internet-traffic rhythm (when people there are
-            actually awake and online), measured live by Cloudflare Radar and auto-refreshed every week.
+            actually awake and online), measured live by Cloudflare Radar and <b>auto-refreshed every week</b>.
           </li>
           <li>
-            <b>Platform window</b> — when each platform's engagement peaks, from 2026 industry research
+            <b>Platform window</b> — when each platform's engagement peaks, from 2026 industry data
             covering roughly two billion interactions.
           </li>
         </ul>

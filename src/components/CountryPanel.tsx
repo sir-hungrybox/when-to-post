@@ -152,10 +152,12 @@ export default function CountryPanel({ a2, simTime, platform, onClose, onJumpTo 
       <footer className="panel-footer">
         <p><b>{pf.label} tip:</b> {pf.bestKnown}</p>
         <p className="muted">
-          {trafficSource === "cloudflare-radar"
-            ? `Audience data: live Cloudflare Radar traffic for ${meta.name}, auto-refreshed weekly.`
-            : "Audience data: modeled daily rhythm — run `npm run fetch-radar` with a free Cloudflare token for live per-country data."}
-          {" "}Platform windows come from large-scale 2026 engagement research.
+          {trafficSource === "cloudflare-radar" ? (
+            <>Audience data: live Cloudflare Radar traffic for {meta.name}, <b>auto-refreshed weekly</b>.</>
+          ) : (
+            "Audience data: modeled daily rhythm — run `npm run fetch-radar` with a free Cloudflare token for live per-country data."
+          )}
+          {" "}Platform windows come from large-scale 2026 engagement data.
         </p>
       </footer>
     </aside>

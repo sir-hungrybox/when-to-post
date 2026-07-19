@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         {trafficSource === "cloudflare-radar" && (
           <div className="legend-live">
-            <i className="pulse-dot" aria-hidden /> live Cloudflare Radar data · refreshed weekly
+            <i className="pulse-dot" aria-hidden /> live Cloudflare Radar data · <b>refreshed weekly</b>
           </div>
         )}
       </div>
