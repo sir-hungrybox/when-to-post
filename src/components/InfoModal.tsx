@@ -18,11 +18,12 @@ export default function InfoModal({ onClose }: Props) {
         <ul>
           <li>
             <b>Audience online</b> — the country's daily internet-traffic rhythm (when people there are
-            actually awake and online), measured live by Cloudflare Radar and <b>auto-refreshed every week</b>.
+            actually awake and online), measured live by Cloudflare Radar and{" "}
+            <b className="hl-amber">auto-refreshed every week</b>.
           </li>
           <li>
-            <b>Platform window</b> — when each platform's engagement peaks, from 2026 industry data
-            covering roughly two billion interactions.
+            <b>Platform window</b> — when each platform's engagement peaks, from large-scale 2026
+            engagement data covering roughly two billion interactions.
           </li>
         </ul>
         <p>
@@ -30,10 +31,10 @@ export default function InfoModal({ onClose }: Props) {
           week — so <b>10/10 means "this country's best possible slot"</b>, not a global comparison.
         </p>
         <p className="muted">
-          Honest caveats: platform studies skew toward US/English-speaking accounts; being online isn't
-          identical to engaging; and your own audience may differ — platform-native analytics (e.g.
-          Instagram's follower activity) beat any population model once you have them. Multi-timezone
-          countries use their most populous zone.
+          Honest caveats: platform engagement data skews toward US/English-speaking accounts; being
+          online isn't identical to engaging; and your own audience may differ — platform-native
+          analytics (e.g. Instagram's follower activity) beat any population model once you have them.
+          Multi-timezone countries use their most populous zone.
         </p>
       </div>
     </div>
