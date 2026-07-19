@@ -18,12 +18,11 @@ export default function InfoModal({ onClose }: Props) {
         <ul>
           <li>
             <b>Audience online</b> — the country's daily internet-traffic rhythm (when people there are
-            actually awake and online). Ships with a modeled curve; connect a free Cloudflare Radar API
-            token and run <code>npm run fetch-radar</code> to replace it with real measured traffic per country.
+            actually awake and online), measured live by Cloudflare Radar and auto-refreshed every week.
           </li>
           <li>
-            <b>Platform window</b> — when each platform's engagement peaks, from the 2026 Sprout Social
-            (~2B engagements) and Buffer (52M posts) studies.
+            <b>Platform window</b> — when each platform's engagement peaks, from 2026 industry research
+            covering roughly two billion interactions.
           </li>
         </ul>
         <p>

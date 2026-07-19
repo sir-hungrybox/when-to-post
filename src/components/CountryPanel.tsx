@@ -150,11 +150,12 @@ export default function CountryPanel({ a2, simTime, platform, onClose, onJumpTo 
       </section>
 
       <footer className="panel-footer">
-        <p><b>{pf.label}:</b> {pf.bestKnown} <span className="muted">(Sprout Social &amp; Buffer, 2026 studies)</span></p>
+        <p><b>{pf.label} tip:</b> {pf.bestKnown}</p>
         <p className="muted">
-          Audience curve: {trafficSource === "cloudflare-radar"
-            ? "live Cloudflare Radar traffic data."
-            : "modeled daily internet rhythm — run `npm run fetch-radar` with a free Cloudflare token for live per-country data."}
+          {trafficSource === "cloudflare-radar"
+            ? `Audience data: live Cloudflare Radar traffic for ${meta.name}, auto-refreshed weekly.`
+            : "Audience data: modeled daily rhythm — run `npm run fetch-radar` with a free Cloudflare token for live per-country data."}
+          {" "}Platform windows come from large-scale 2026 engagement research.
         </p>
       </footer>
     </aside>

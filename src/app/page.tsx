@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
-import { COUNTRIES, scoreAt } from "@/lib/score";
+import { COUNTRIES, scoreAt, trafficSource } from "@/lib/score";
 import { PLATFORMS, type PlatformId } from "@/lib/platforms";
 import { AMBER_RAMP } from "@/lib/colors";
 import CountryPanel from "@/components/CountryPanel";
@@ -95,6 +95,11 @@ export default function Home() {
           <span>post score at map time</span>
           <span>10 · prime</span>
         </div>
+        {trafficSource === "cloudflare-radar" && (
+          <div className="legend-live">
+            <i className="pulse-dot" aria-hidden /> live Cloudflare Radar data · refreshed weekly
+          </div>
+        )}
       </div>
 
       <TimeBar
